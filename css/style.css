@@ -6,15 +6,43 @@ h6 {
     color: #b91547;
 }
 
-.selector {
-    padding: 3px;
+.select-age {
+    padding: .1875rem;
+    text-align: center;
 }
 
-form {
-    border-radius: 10px;
+#form-ticket {
+    border-radius: .625rem;
+    height: 12.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input-btn {
+    max-height: 2.5rem;
+}
+
+.input-name, .input-distance {
+    text-align: center;
+}
+
+.input-name, .input-distance, .select-age {
+    border: .0625rem solid #b91547;
+    border-radius: .3125rem;
+    
 }
 
 .btn-submit, .btn-reset {
     font-weight: bold;
     color: #b91547;
+    border: .0625rem solid lightgray;
+    border-radius: .3125rem;
+}
+
+.input-name:focus, .input-distance:focus, .select-age:focus {
+    border: .0625rem solid #b91547;
+    outline: none;
+}
+
+.btn-submit:hover, .btn-reset:hover {
+    border: .0625rem solid #f79757;
 }

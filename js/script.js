@@ -18,14 +18,7 @@ const ticketPriceElm = document.getElementById("ticket-price")
 
 // Forms
 
-const formElm = document.getElementById("form")
-
-//VARIABLES
-
-
-
-
-
+const formElm = document.getElementById("form-ticket")
 
 // console.log(fullNameFieldElm, distanceFieldElm, ageSelectorElm, formElm)
 
@@ -47,7 +40,7 @@ function getRandomNumber(min, max) {
 
 formElm.addEventListener("submit", function(event) {
     event.preventDefault()
-    // Ticket price to age 
+    // Variables ticket price to age 
     const distanceNumber = Number(distanceFieldElm.value)
     const ticketPrice = (0.21 * distanceNumber).toFixed(2)
     const ticketPriceUnderage = (ticketPrice - ticketPrice / 100 * 20).toFixed(2)

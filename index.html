@@ -21,32 +21,32 @@
     <!-- MAIN -->
     <main>
     <!-- FORM -->
-     <div>
-        <form id="form" class="w-100 d-flex justify-content-center text-center bg-white p-3">
-            <div class="row">
+     <section>
+        <form id="form-ticket" class="w-100 d-flex justify-content-center text-center bg-white p-3">
+            <div class="row mt-3">
             <div class="col">
                 <h6>Nome e Cognome</h6>
-                <input class="text-center" type="text" id="full-name-field" placeholder="Nome e cognome" required>
+                <input class="input-name" type="text" id="full-name-field" placeholder="Nome e cognome" required>
             </div>
             <div class="col">
                 <h6>Km da percorrere</h6>
-                <input class="text-center" type="number" id="distance-field" placeholder="Chilometri da percorrere" required>
+                <input class="input-distance" type="number" id="distance-field" placeholder="Chilometri da percorrere" required>
             </div>
             <div class="col">
                 <h6>Fascia d'età</h6>
-                <select id="age-selector" class="selector text-center" required>
+                <select id="age-selector" class="select-age" required>
             <option value="" disabled selected>---</option>
             <option value="Maggiorenne">Maggiorenne</option>
             <option value="Minorenne">Minorenne</option>
             <option value="Over 65">Over 65</option>
             </select>
         </div>
-        <div class="d-flex justify-content-center mt-4 mb-1 gap-3">
+        <div class="input-btn d-flex justify-content-center mt-4 mb-1 gap-3">
             <input class="btn-submit" type="submit" value="Genera">
             <input class="btn-reset" type="reset" value="Annulla">
         </div>
         </form>
-        </div>
+    </section>
     <!-- /FORM -->
      
      <!-- TICKET-->
