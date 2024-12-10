@@ -30,7 +30,7 @@
             </div>
             <div class="col">
                 <h6>Km da percorrere</h6>
-                <input class="input-distance" type="number" id="distance-field" placeholder="Chilometri da percorrere" required>
+                <input class="input-distance" type="number" id="distance-field" placeholder="Chilometri da percorrere" min="0" required>
             </div>
             <div class="col">
                 <h6>Fascia d'età</h6>
@@ -50,36 +50,38 @@
     <!-- /FORM -->
      
      <!-- TICKET-->
-      <div>
+      <section id="section-ticket" class="d-none">
       <div class="text-center text-white mt-5">
-        <h2>IL TUO BIGLIETTO</h2>
+        <h1>IL TUO BIGLIETTO</h1>
       </div>
-      <div class="row bg-white w-100 p-3">
+      <div class="ticket">
         <div>
             <h3>DETTAGLIO PASSEGGERI</h3>
         </div>
-        <div class="col">
-        <h4>NOME PASSEGGERO</h4>
+        <div class="passenger-info row">
+        <div class="col name-container">
+        <h5>NOME PASSEGGERO</h5>
         <p id="namePassenger"></p>
     </div>
-      <div class="col">
+      <div class="col pt-3">
         <h5>Offerta</h5>
-        <p id="discount"></p>
+        <p class="p-margin-top" id="discount"></p>
       </div>
-      <div class="col">
+      <div class="col pt-3">
         <h5>Carrozza</h5>
-        <p id="seat"></p>
+        <p class="p-margin-top" id="seat"></p>
       </div>
-      <div class="col">
+      <div class="col pt-3">
         <h5>Codice CP</h5>
-        <p id="cp-code"></p>
+        <p class="p-margin-top" id="cp-code"></p>
       </div>
-      <div class="col">
+      <div class="col pt-3">
         <h5>Costo biglietto</h5>
-        <p id="ticket-price"></p>
+        <p class="p-margin-top" id="ticket-price"></p>
+      </div>
       </div>
     </div>
-    </div>
+</section>
      <!-- /TICKET-->
 
     </main>

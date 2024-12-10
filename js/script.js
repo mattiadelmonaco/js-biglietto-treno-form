@@ -20,7 +20,9 @@ const ticketPriceElm = document.getElementById("ticket-price")
 
 const formElm = document.getElementById("form-ticket")
 
-// console.log(fullNameFieldElm, distanceFieldElm, ageSelectorElm, formElm)
+// Ticket 
+
+const sectionTicketElm = document.getElementById("section-ticket")
 
 // FUNCTIONS
 /**
@@ -58,5 +60,7 @@ formElm.addEventListener("submit", function(event) {
     } else if (ageSelectorElm.value === "Over 65") {
         ticketPriceElm.innerHTML = ticketPriceOver65
     }
+    sectionTicketElm.classList.remove("d-none")
+    sectionTicketElm.classList.add("d-block")
 })
 
