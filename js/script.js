@@ -19,6 +19,7 @@ const ticketPriceElm = document.getElementById("ticket-price")
 // Forms
 
 const formElm = document.getElementById("form-ticket")
+const btnReset = document.getElementById("btn-reset")
 
 // Ticket 
 
@@ -64,4 +65,8 @@ formElm.addEventListener("submit", function(event) {
         console.log(fullNameFieldElm.value, ageSelectorElm.value, randomSeatElm.innerHTML, randomCpCodeElm.innerHTML, ticketPriceOver65 + "€")
     }
     sectionTicketElm.classList.remove("d-none")
+})
+
+btnReset.addEventListener("click", function(event) {
+    sectionTicketElm.classList.add("d-none")
 })
