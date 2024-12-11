@@ -64,5 +64,4 @@ formElm.addEventListener("submit", function(event) {
         console.log(fullNameFieldElm.value, ageSelectorElm.value, randomSeatElm.innerHTML, randomCpCodeElm.innerHTML, ticketPriceOver65 + "€")
     }
     sectionTicketElm.classList.remove("d-none")
-    sectionTicketElm.classList.add("d-block")
 })
